@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap');
+@import "./components/component.css";
+@import "./docs/doc.css";
+
+:root {
+    --dark-bg: #101b37;
+    /* --shade-300: #4b4bfb; */
+    --grey-text: #fff;
+    --neon-blue: #01c7ef;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.landing-page-container {
+    font-family: 'Orbitron', sans-serif;
+    background-color: var(--dark-bg);
+    width: 100vw;
+    overflow: hidden;
+    animation: fadeInAnimation ease-in 1s;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.landing-page-container::before,
+.landing-page-container::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    width: 10px;
+    z-index: 99;
+    background-color: var(--neon-blue);
+    height: 100vh;
+    box-shadow: 0 0 15px 0 var(--neon-blue);
+}
+
+@media screen and (max-width: 720px) {
+
+    .landing-page-container::before,
+    .landing-page-container::after {
+        width: 5px;
+    }
+
+  
+}
+
+.landing-page-container::before {
+    left: 0;
+}
+
+.landing-page-container::after {
+    right: 0;
+}
+
+.header-section {
+    text-align: center;
+    position: relative;
+    height: 100vh;
+}
+
+.header-container {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    align-items: start;
+    margin-left: 7vw;
+}
+
+.header-section h1 {
+    font-size: 4rem;
+    margin: 0;
+    text-align: center;
+    text-shadow: 2px 1px var(--neon-blue);
+    color: var(--grey-text);
+}
+
+.header-section h1 p {
+    position: relative;
+    font: inherit;
+    margin: 0;
+    width: fit-content;
+    font-weight: 800;
+    text-align: left;
+    line-height: 130%;
+    letter-spacing: -0.03em;
+}
+
+#hide-when-big {
+    visibility: hidden;
+}
+
+.header-section h2 {
+    max-width: 65ch;
+    font-weight: 200;
+    color: var(--neon-blue);
+    margin: 0;
+}
+
+.header-section .fixed-header {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.header-section .fixed-header:before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    background-color: var(--dark-bg);
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    bottom: 0;
+    left: 0;
+}
+
+.header-section .header-text {
+    position: relative;
+}
+
+.button-container {
+    position: absolute;
+    bottom: 20vh;
+    padding: 2rem 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    /* display: flex; */
+    transition: opacity 250ms;
+}
+
+.fixed-header.scrolled .button-container {
+    opacity: 0;
+}
+
+.sub-head-1 {
+    color: var(--neon-blue);
+}
+
+.header-section .animate-logo {
+    animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+.header-section .animate-text-1 {
+    animation: fade-in-bottom 0.5s ease-in-out both;
+}
+
+.get-started-btn {
+    position: relative;
+    border-color: var(--neon-blue);
+    border: 2px solid;
+    color: var(--neon-blue);
+    background-color: transparent;
+    padding: 1rem 3rem 1rem 2rem;
+    padding-right: 3rem;
+    border-radius: 2rem;
+    font: inherit;
+    cursor: pointer;
+}
+
+@keyframes arrow {
+    0% {
+        transform: translateX(1rem);
+    }
+
+    50% {
+        transform: translateX(0.25rem);
+    }
+
+    100% {
+        transform: translateX(1rem);
+    }
+}
+
+.animatedArrow {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    opacity: 0.8;
+    cursor: pointer;
+    color: var(--neon-blue);
+}
+
+.animatedArrow:last-child {
+    opacity: 1;
+    bottom: 30%;
+    /* width: 4rem;
+    height: 4rem; */
+    /* background: transparent; */
+    animation: arrow 1s ease-in-out infinite;
+}
+
+@media screen and (max-width: 600px) {
+    .header-container {
+        text-align: center;
+        align-items: center;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .header-section h1 p {
+        text-align: center !important;
+    }
+
+    .header-section h1 {
+        font-size: 3rem;
+        margin: 0;
+        padding: 10px 15px 0 15px;
+    }
+
+    .sub-head-2 {
+        font-size: 1.25rem;
+        padding: 0 0 20px 0;
+    }
+
+    .button-container {
+        bottom: 10vh;
+        /* margin: 10rem 0; */
+    }
+
+    #hide-when-small {
+        visibility: hidden;
+    }
+
+    #hide-when-big {
+        visibility: visible;
+    }
+}
