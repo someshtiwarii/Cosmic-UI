@@ -56,12 +56,11 @@
     top: 1rem;
     left: 0;
     padding: 0.5rem;
-    background-color: #fb923c;
+    background-color: var(--light-orange);
     color: white;
     font-size: 0.75rem;
     border-right: 2px;
     border-bottom: 2px;
-
 }
 
 .card-dismiss {
