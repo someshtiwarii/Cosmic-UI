@@ -7,7 +7,6 @@
     padding: 1rem;
     border-radius: 0.5rem;
     margin-top: 1rem;
-
 }
 
 
@@ -54,32 +53,23 @@
 }
 
 
-.online-badge {
+.online-badge , .offline-badge , .dnd-badge {
     position: absolute;
     bottom: 10px;
     right: 15px;
-    background-color: var(--dark-green);
     padding: 0.4rem;
     border-radius: 50%;
     border: 1px solid white;
+}
+
+.online-badge{
+    background-color: var(--dark-green);
 }
 
 .offline-badge {
-    position: absolute;
-    bottom: 10px;
-    right: 15px;
     background-color: var(--dark-grey);
-    padding: 0.4rem;
-    border-radius: 50%;
-    border: 1px solid white;
 }
 
 .dnd-badge {
-    position: absolute;
-    bottom: 10px;
-    right: 15px;
     background-color: var(--neon-red);
-    padding: 0.4rem;
-    border-radius: 50%;
-    border: 1px solid white;
 }
