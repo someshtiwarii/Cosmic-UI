@@ -2,10 +2,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Install | Cosmic UI </title>
+    <title>Avatar | Cosmic UI </title>
     <script src="https://kit.fontawesome.com/e70e2d0aa4.js" crossorigin="anonymous"></script>
     <link rel="icon" href="/assets/favicon.png" />
-    <link rel="stylesheet" href="doc.css">
+
+    <link rel="stylesheet" href="/docs/doc.css">
+    <link rel="stylesheet" href="/components/component.css">
 </head>
 
 <body>
@@ -55,40 +57,51 @@
 
         <div class="section">
 
-            <div class="section-header" id="top">
+            <div class="section-header">
                 <div>
-                    <h1>Install Cosmic UI</h1>
-                    <p>
-                        Install in few clicks !
+                    <h1 class="section-main-text " id="top">Avatar</h1>
+                    <p class="paragraph">
+                        Avatar can be used to show user's profile picture on profile information page, on navigation
+                        bar, in blogs grid items.
                     </p>
                 </div>
+
             </div>
 
             <div class="section-main">
-                <div class="section-main-text">
-                    <h2>Insert the code below in your HTML</h2>
-                    <p>
-                        Below provided is the CSS link you can include in the header of your HTML and
-                        access classes provided in the Documentation for your elements !
-                        <br>
-                        Happy Coding !
-                    </p>
+
+                <div class="section-info">
+                    <h3>Image avatars</h3>
+                    <!-- <p>Change the status of the avatars by inserting the given class to get the desired
+                        avatar.
+                    </p> -->
+
+
+
+                    <div class="avatar-container">
+                        <img src="/assets/img_avatar.png" class="avatar sm">
+                        <img src="/assets/img_avatar.png" class="avatar md">
+                        <img src="/assets/img_avatar.png" class="avatar lg">
+                    </div>
+
+
+                    <div class="code-img">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28243%2C244%2C246%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522%252Fassets%252Fimg_avatar.png%2522%2520class%253D%2522avatar%2520sm%2522%253E%2520%250A%253Cimg%2520src%253D%2522%252Fassets%252Fimg_avatar.png%2522%2520class%253D%2522avatar%2520md%2522%253E%250A%253Cimg%2520src%253D%2522%252Fassets%252Fimg_avatar.png%2522%2520class%253D%2522avatar%2520lg%2522%253E%250A"
+                            style="width: 580px; height: 243px; border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
                 </div>
 
-                <div class="code-img">
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28243%2C244%2C246%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=Coming%2520soon..."
-                        style="width: 251px; height: 188px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </div>
                 <button class="float-btn"><a href="#top"><i class="fas fa-arrow-up fa-2x"></i></a></button>
             </div>
-
-
         </div>
 
+
     </div>
+
+
 </body>
 
 </html>

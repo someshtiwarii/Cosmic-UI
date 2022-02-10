@@ -14,43 +14,46 @@
     --main-color: #101b37;
     --black: #101b37;
     --white: white;
-    --neon-blue:#01c7ef;
+    --neon-blue: #01c7ef;
     --grey: #f3f4f6;
-    --dark-grey:#9ca3af;
-    
-   
+    --dark-grey: #9ca3af;
 
-    --dark-red: #7f1d1d ;
+
+
+    --dark-red: #7f1d1d;
     --light-red: #f87171;
     --dark-green: #1b7052;
-    --light-green:#84f1c9 ;
+    --light-green: #84f1c9;
     --dark-yellow: #ff9204;
-    --light-yellow: #ffe7c5 ;
+    --light-yellow: #ffe7c5;
     --dark-blue: #2957ae;
-    --light-blue: #7fd2e6;   
-    --dark-orange:#fa4a0c;
-    
-    --medium-grey:#cccccc;
+    --light-blue: #7fd2e6;
+    --dark-orange: #fa4a0c;
+
+    --medium-grey: #cccccc;
 
     --neon-red: #ff1818;
 
 
-    --dark-bluee:#1b39ff;
+    --dark-bluee: #1b39ff;
 }
 
-body{
+body {
     letter-spacing: 1px;
 }
 
 
-a, a:hover, a:focus, a:active {
+a,
+a:hover,
+a:focus,
+a:active {
     text-decoration: none;
     color: inherit;
-    outline:none;
-    cursor:pointer;
+    outline: none;
+    cursor: pointer;
 }
 
-button{
+button {
     font-family: 'Orbitron', sans-serif;
     font-weight: 300;
 }
@@ -99,8 +102,8 @@ button{
     overflow-y: scroll;
     background-color: var(--black);
     flex-shrink: 0;
-    transition:0.3s all ease-in;
-   
+    transition: 0.3s all ease-in;
+
 }
 
 .sidebar {
@@ -125,7 +128,7 @@ button{
     border-radius: 60px;
     font-weight: 600;
     letter-spacing: 1px;
-    transition:0.3s all ease-in;
+    transition: 0.3s all ease-in;
 }
 
 .sidebar-main a:hover {
@@ -133,8 +136,8 @@ button{
     color: var(--main-color);
 }
 
-.sidebar-footer{
-    display:flex;
+.sidebar-footer {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     color: var(--neon-blue);
@@ -143,24 +146,25 @@ button{
     font-weight: 700;
     letter-spacing: 1px;
     border-top: 2px solid var(--neon-blue);
-    gap:1rem;
+    gap: 1rem;
     margin-top: 0.5rem;
 }
 
-.footer-text{
+.footer-text {
     text-align: center;
     font-size: 1.25rem;
 }
 
-.social-icons{
+.social-icons {
     display: flex;
     justify-content: space-around;
 }
-.social-icon{
+
+.social-icon {
     font-size: 1.5rem;
 }
 
-.social-icon:hover{
+.social-icon:hover {
     transform: scale(1.4);
     transition: 0.2s ease-in;
     cursor: pointer;
@@ -175,7 +179,7 @@ button{
     overflow-y: scroll;
     color: var(--black);
     padding: 2rem;
-    flex-grow:1;
+    flex-grow: 1;
 }
 
 .section-header {
@@ -195,17 +199,17 @@ button{
     padding: 1rem;
 }
 
-.section-info{
+.section-info {
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
 
-.code-img{
+.code-img {
     display: flex;
     margin-top: 2rem;
     margin-bottom: 2rem;
     justify-content: center;
-    width:100%;
+    width: 100%;
     height: auto;
 }
 
@@ -223,16 +227,16 @@ button{
     box-shadow: 0 0 5px var(--neon-blue);
 }
 
-.float-btn a{
+.float-btn a {
     color: var(--neon-blue) !important;
-   
+
 }
 
-.float-btn i{
+.float-btn i {
     text-shadow: 0 0 4px var(--neon-blue);
 }
 
-.logo h3{
+.logo h3 {
     text-shadow: 0 0 5px var(--neon-blue);
     letter-spacing: 2px;
 }
@@ -257,7 +261,7 @@ button{
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #01c7efbb; 
+    background: #01c7efbb;
 }
 
 
@@ -294,7 +298,7 @@ button{
 
     .section {
         width: 100%;
-        padding:1rem;
+        padding: 1rem;
     }
 
     .section-header,
