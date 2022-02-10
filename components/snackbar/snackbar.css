@@ -1,0 +1,64 @@
+.snackbar-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    background-color: var(--grey);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+.snackbar{
+    max-width: 25rem;
+    background-color: var(--dark-grey);
+    color: white;
+    border-radius: 4px;
+    padding: 0.5rem;
+}
+
+.snackbar-baseline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.snackbar-leading {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  
+}
+
+.snackbar-stacked {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.retry-btn {
+    padding: 0.5rem;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+a {
+    color: var(--dark-blue);
+}
+
+.close-btn {
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.close-btn:hover {
+    color: var(--black);
+}
+
+.stacked {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
