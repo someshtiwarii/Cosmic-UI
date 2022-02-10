@@ -9,16 +9,33 @@
     margin-top: 1rem;
 }
 
-.snackbar-baseline {
+.snackbar{
     max-width: 25rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem;
     background-color: var(--dark-grey);
     color: white;
     border-radius: 4px;
+    padding: 0.5rem;
 }
+
+.snackbar-baseline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.snackbar-leading {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  
+}
+
+.snackbar-stacked {
+    display: flex;
+    flex-direction: column;
+}
+
 
 .retry-btn {
     padding: 0.5rem;
@@ -38,28 +55,6 @@ a {
 
 .close-btn:hover {
     color: var(--black);
-}
-
-
-.snackbar-leading {
-    max-width: 25rem;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    padding: 0.5rem;
-    background-color: var(--dark-grey);
-    color: white;
-    border-radius: 4px;
-}
-
-.snackbar-stacked {
-    max-width: 25rem;
-    display: flex;
-    flex-direction: column;
-    padding: 0.5rem;
-    background-color: var(--dark-grey);
-    color: white;
-    border-radius: 4px;
 }
 
 .stacked {
