@@ -1,0 +1,158 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input | Cosmic UI </title>
+    <script src="https://kit.fontawesome.com/e70e2d0aa4.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/assets/favicon.png" />
+
+    <link rel="stylesheet" href="/docs/doc.css">
+    <link rel="stylesheet" href="/components/component.css">
+</head>
+
+<body>
+    <div class="doc-container">
+
+        <div class="sidebar-wrapper">
+            <div class="sidebar">
+                <div class="sidebar-header">
+                    <div class="logo">
+                        <a href="/index.html">
+                            <h3>Cosmic UI</h3>
+                        </a>
+                    </div>
+                </div>
+                <a href="/docs/doc.html" class="install-text">Getting Started</a>
+                <div class="sidebar-main">
+                    <a href="/components/avatar/avatar.html">Avatar</a>
+                    <a href="/components/alert/alert.html">Alert</a>
+                    <a href="/components/badge/badge.html">Badge</a>
+                    <a href="/components/button/button.html">Button</a>
+                    <a href="/components/cards/cards.html">Card</a>
+                    <a href="/components/image/image.html">Image</a>
+                    <a href="/components/input/input.html">Input</a>
+                    <a href="/components/text-utilities/text.html">Text-Utilities</a>
+                    <a href="/components/lists/lists.html">Lists</a>
+                    <a href="/components/rating/rating.html">Rating</a>
+                    <a href="/components/snackbar/snackbar.html">Snackbar</a>
+
+
+                </div>
+                <div class="sidebar-footer">
+                    <div class="footer-text">
+                        <p>Social Media</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://github.com/someshtiwarii/Cosmic-UI"><i
+                                class="fab fa-github social-icon"></i></a>
+                        <a href="https://www.linkedin.com/in/someshtiwarii/"><i
+                                class="fab fa-linkedin social-icon"></i></a>
+                        <a href="https://twitter.com/someshtiwarii"><i class="fab fa-twitter social-icon"></i></a>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="section">
+
+            <div class="section-header">
+                <div>
+                    <h1 class="section-main-text" id="top">Input</h1>
+                    <p>
+                        Input fields are an essential user interface design element, providing users with the means to
+                        enter non-standardized responses.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="section-main">
+
+                <div class="section-info">
+                    <h3>Text input</h3>
+
+                    <div class="input-container">
+
+                        <div class="regular-input">
+                            <label for="fname">First Name:</label>
+                            <input required type="text" id="fname" class="fname" name="firstname"
+                                placeholder="Enter Your name..">
+                        </div>
+
+
+                    </div>
+
+                    <div class="code-img">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28243%2C244%2C246%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522regular-input%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522fname%2522%253EFirst%2520Name%253A%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520required%2520type%253D%2522text%2522%2520id%253D%2522fname%2522%2520class%253D%2522fname%2522%2520name%253D%2522firstname%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Enter%2520Your%2520name..%2522%253E%250A%253C%252Fdiv%253E"
+                            style="width: 765px; height: 279px; border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+
+                <hr>
+
+
+                <div class="section-info">
+                    <h3>Text input with validation</h3>
+
+                    <div class="input-container">
+
+                        <div class="login-input">
+
+                            <div class="username-box">
+                                <label for="uname">Username:</label>
+                                <input required type="text" id="uname" class="uname" name="uname"
+                                    placeholder="Enter username..">
+                                <div class="message">
+                                    <p><i class="fas fa-exclamation-triangle"></i>enter correct username</p>
+                                </div>
+
+                            </div>
+
+                            <div class="password-box">
+                                <label for="password">Password:</label>
+                                <input required type="password" id="password" class="password" name="password"
+                                    placeholder="Enter password..">
+                                <div class="message">
+                                    <p><i class="fas fa-exclamation-triangle"></i>enter correct password</p>
+                                </div>
+                            </div>
+
+                            <div class="options-box">
+                                <input type="checkbox">
+                                <p>Remember me</p>
+                                <a href="#">Forgot your password?</a>
+                            </div>
+
+                            <button class="btn btn-primary">Login</button>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="code-img">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28243%2C244%2C246%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522login-input%2522%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522username-box%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522uname%2522%253EUsername%253A%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520required%2520type%253D%2522text%2522%2520id%253D%2522uname%2522%2520class%253D%2522uname%2522%2520name%253D%2522uname%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Enter%2520username..%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522message%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253Eenter%2520correct%2520username%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522password-box%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522password%2522%253EPassword%253A%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520required%2520type%253D%2522password%2522%2520id%253D%2522password%2522%2520class%253D%2522password%2522%2520name%253D%2522password%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Enter%2520password..%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522message%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253Eenter%2520correct%2520password%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522options-box%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ERemember%2520me%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253EForgot%2520your%2520password%253F%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253ELogin%253C%252Fbutton%253E%250A%250A%253C%252Fdiv%253E"
+                            style="width: 875px; height: 726px; border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+
+                <button class="float-btn"><a href="#top"><i class="fas fa-arrow-up fa-2x"></i></a></button>
+            </div>
+
+
+        </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey);
+    padding:1rem;
+    border-radius: 0.5rem;   
+    margin-top:1rem;
+}
+
+.resp-img{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    object-fit: cover;
+}
+
+.round-img{
+ width:8rem;
+ height:8rem;
+ border-radius: 50%;
+ object-fit: cover;
+}
+
