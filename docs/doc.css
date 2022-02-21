@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
-
 /* global reset */
 
 * {
@@ -50,7 +49,7 @@ button {
     --light-yellow: #ffe7c5;
     --dark-blue: #2957ae;
     --light-blue: #7fd2e6;
-    --light-orange:#fb923c; 
+    --light-orange: #fb923c;
     --dark-orange: #fa4a0c;
 
     --neon-red: #ff1818;
@@ -64,10 +63,8 @@ button {
 }
 
 .install-text {
-    font-size: 1rem;
     margin: 1rem 1rem 1rem 2rem;
     color: var(--neon-blue);
-    font-weight: bold;
 }
 
 .install-text:hover {
@@ -84,8 +81,6 @@ button {
 .logo a {
     color: var(--grey);
     font-size: 1.5rem;
-    display: flex;
-    align-items: flex-end;
 }
 
 /* sidebar */
@@ -138,7 +133,7 @@ button {
     flex-direction: column;
     justify-content: center;
     color: var(--neon-blue);
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 1rem;
     border-radius: 4rem;
     font-weight: 700;
     letter-spacing: 1px;
@@ -172,24 +167,22 @@ button {
 .section {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     height: 100vh;
     overflow-y: scroll;
     color: var(--black);
     padding: 2rem;
-    flex-grow: 1;
 }
 
 .section-header {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
     padding: 1rem;
-    border-bottom: 1px solid #b1acac;
+    border-bottom: 1px solid var(--dark-grey);
 }
 
 .section-header p {
     padding-top: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
 }
 
 .section-main {
@@ -217,7 +210,7 @@ button {
 .float-btn {
     position: fixed;
     bottom: 1rem;
-    right: 1.2rem;
+    right: 1.25rem;
     border: none;
     height: 50px;
     width: 50px;
@@ -267,14 +260,9 @@ button {
 }
 
 
-
-
-
 /* Media Queries*/
 
-
 @media screen and (max-width: 700px) {
-
 
     .sidebar-wrapper {
         display: none;
@@ -288,24 +276,4 @@ button {
     .section-main {
         padding: 1.5rem 1rem;
     }
-
-}
-
-@media screen and (max-width: 450px) {
-
-
-    .sidebar-wrapper {
-        display: none;
-    }
-
-    .section {
-        width: 100%;
-        padding: 1rem;
-    }
-
-    .section-header,
-    .section-main {
-        padding: 0.75rem 0.5rem;
-    }
-
 }
