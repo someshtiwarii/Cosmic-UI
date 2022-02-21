@@ -1,6 +1,6 @@
 # Cosmic-UI
 
-Clean and futuristic library !
+Clean and futuristic component library !
 
 ## How to use :
 
