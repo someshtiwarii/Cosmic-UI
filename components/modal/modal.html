@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal | Cosmic UI </title>
+    <script src="https://kit.fontawesome.com/e70e2d0aa4.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/assets/favicon.png" />
+    <link rel="stylesheet" href="https://cosmicui.netlify.app/components/component.css" />
+    <link rel="stylesheet" href="/docs/doc.css">
+    <link rel="stylesheet" href="modal.css">
+</head>
+
+<body>
+    <div class="doc-container">
+
+        <div class="sidebar-wrapper">
+            <div class="sidebar">
+                <div class="sidebar-header">
+                    <div class="logo">
+                        <a href="/index.html">
+                            <h3>Cosmic UI</h3>
+                        </a>
+                    </div>
+                </div>
+                <a href="/docs/doc.html" class="install-text">Getting Started</a>
+                <div class="sidebar-main">
+                    <a href="/components/avatar/avatar.html">Avatar</a>
+                    <a href="/components/alert/alert.html">Alert</a>
+                    <a href="/components/badge/badge.html">Badge</a>
+                    <a href="/components/button/button.html">Button</a>
+                    <a href="/components/cards/cards.html">Card</a>
+                    <a href="/components/image/image.html">Image</a>
+                    <a href="/components/input/input.html">Input</a>
+                    <a href="/components/text-utilities/text.html">Text-Utilities</a>
+                    <a href="/components/lists/lists.html">Lists</a>
+                    <a href="/components/rating/rating.html">Rating</a>
+                    <a href="/components/snackbar/snackbar.html">Snackbar</a>
+                    <a href="/components/navigation/navigation.html">Navigation</a>
+                    <a href="/components/navigation/grid.html">Grid</a>
+                    <a href="/components/navigation/modal.html">Modal</a>
+
+                </div>
+                <div class="sidebar-footer">
+                    <div class="footer-text">
+                        <p>Social Media</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://github.com/someshtiwarii/Cosmic-UI"><i
+                                class="fab fa-github social-icon"></i></a>
+                        <a href="https://www.linkedin.com/in/someshtiwarii/"><i
+                                class="fab fa-linkedin social-icon"></i></a>
+                        <a href="https://twitter.com/someshtiwarii"><i class="fab fa-twitter social-icon"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="section">
+
+            <div class="section-header">
+                <div>
+                    <h1 id="top">Modal</h1>
+                    <p>A modal is a dialog box/popup window that is displayed on top of the current page.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="section-main">
+
+                <div class="section-info">
+                    <h3>Modal (simple)</h3>
+
+                    <div class="modal-container">
+                        <div class="modal">
+                            <div class="modal-text">
+                                Do you want to exit?
+                            </div>
+                            <div class="modal-btn">
+                                <button class="btn btn-primary-outline">
+                                    Ok
+                                </button>
+                                <button class="btn btn-primary">
+                                    Cancel
+                                </button>               
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="code-img">
+                        <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28243%2C244%2C246%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=931&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522modal%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522modal-text%2522%253E%250A%2520%2520%2520%2520%2520%2520Do%2520you%2520want%2520to%2520exit%253F%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522modal-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary-outline%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Ok%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Cancel%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                                style="width: 931px; height: 411px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                                </iframe>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="section-info">
+                    <h3>Modal (with title)</h3>
+
+                    <div class="modal-container">
+                        <div class="modal">
+                            <div class="modal-title">
+                                <h4>This is a modal</h4>
+                                <i class="fas fa-times"></i>
+                            </div>
+                            <div class="modal-text">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                            </div>
+                            <div class="modal-btn">
+                                <button class="btn btn-primary-outline">
+                                    Ok
+                                </button>
+                                <button class="btn btn-primary">
+                                    Save
+                                </button>
+                                <button class="btn btn-tertiary">
+                                    Cancel
+                                </button>                    
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="code-img">
+                        <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28243%2C244%2C246%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=931&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522modal%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522modal-title%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch4%253EThis%2520is%2520a%2520modal%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522modal-text%2522%253E%250A%2520%2520%2520%2520%2520%2520Lorem%2520Ipsum%2520is%2520simply%2520dummy%2520text%2520of%2520the%2520printing%2520and%2520typesetting%2520industry.%2520Lorem%2520Ipsum%2520%2509%2509%2509has%2520been%2520the%2520industry%27s%2520standard%2520dummy%2520text%2520ever%2520since%2520the%25201500s.%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522modal-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary-outline%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Ok%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Save%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-tertiary%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Cancel%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                                style="width: 916px; height: 560px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                                </iframe>
+                    </div>
+                </div>
+
+
+                <button class="float-btn"><a href="#top"><i class="fas fa-arrow-up fa-2x"></i></a></button>
+            </div>
+
+
+        </div>
+
+
+</body>
+
+</html>
